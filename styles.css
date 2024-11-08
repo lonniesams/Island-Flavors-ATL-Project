@@ -1,0 +1,349 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Applying the Poppins font globally */
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+}
+
+/* Main content should take up remaining space */
+main {
+    flex: 1;
+}
+
+/* Header and Navigation Bar Styling */
+.header {
+    background-color: #009444; /* Jamaican green for a tropical feel */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds slight shadow to separate header from content */
+}
+
+/* Logo Styling */
+.logo img {
+    width: 180px; /* Adjust logo size */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Slight zoom on hover for interactivity */
+}
+
+/* Navigation Links Styling */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between the links */
+    margin: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff; /* White text for contrast against green background */
+    font-weight: 600; /* Slightly bold */
+    text-transform: uppercase; /* Makes the links stand out more */
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+    padding: 8px 15px; /* Adds some padding around the links */
+    border-radius: 5px; /* Softens the link background */
+}
+
+.nav a:hover {
+    background-color: #e35205; /* Orange background on hover for contrast */
+    color: white;
+}
+
+.nav a:active {
+    background-color: #005d2a; /* Darker green when the link is clicked */
+}
+
+/* Hero Section Styles */
+.hero, .index-hero, .about-hero, .blog-hero, .contact-hero {
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Sets a minimum height for the hero sections */
+}
+
+.hero {
+    background-image: url('img/background-hero.webp'); /* Default background image for hero */
+}
+
+.index-hero {
+    background-image: url('img/background-hero.webp'); /* Use this or another image for index */
+}
+
+.about-hero {
+    background-image: url('img/about-hero.webp');
+}
+
+.blog-hero {
+    background-image: url('img/blog-hero.webp');
+}
+
+.contact-hero {
+    background-image: url('img/contact-hero.webp');
+}
+
+/* Hero Text Styles */
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* CTA Button Styling */
+.cta-button {
+    background-color: #e35205;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #d24004; /* Darken button on hover */
+}
+
+/* Menu Section */
+.menu {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu .item {
+    margin: 20px;
+    width: 250px;
+}
+
+.menu img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.menu p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* About and Order Sections */
+.about, .order {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.about h2, .order h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p, .order p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Blog Section */
+.blog-hero {
+    background-image: url('img/blog-hero.webp');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.blog-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.blog-hero p {
+    font-size: 20px;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.blog-post {
+    width: 45%;
+    background-color: #f8f8f8;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post-content {
+    padding: 20px;
+}
+
+.blog-post-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-post-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Contact Page */
+.contact-hero {
+    background-image: url('img/contact-hero.webp');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    font-size: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.contact-form-container, .contact-details {
+    width: 45%;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    background-color: #e35205;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-details {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .menu .item {
+        width: 90%;
+    }
+
+    .blog-post {
+        width: 90%;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form-container, .contact-details {
+        width: 90%;
+    }
+}
